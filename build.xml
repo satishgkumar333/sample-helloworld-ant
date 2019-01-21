@@ -30,6 +30,7 @@
 
     <target name="run" depends="jar">
         <java jar="${jar.dir}/${ant.project.name}.jar" fork="true"/>
+        <mkdir dir="test"/>
     </target>
 
     <target name="clean-build" depends="clean,jar"/>
